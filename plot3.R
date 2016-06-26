@@ -1,0 +1,7 @@
+png(filename='plots/plot3.png',width=480,height=480,units='px')
+llabs <- c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
+with (valid_exData, plot(time, Sub_metering_1, type="l", col="black", xlab="", ylab="Energy sub metering"))
+lines(valid_exData$time, valid_exData$Sub_metering_2, col="red")
+lines(valid_exData$time, valid_exData$Sub_metering_3, col="blue")
+legend("topright", legend=llabs, col=c("black", "red", "blue"), lty="solid")
+dev.off()
