@@ -13,10 +13,10 @@ time <-strptime(paste(valid_exData$Date, valid_exData$Time, sep=" "),"%d/%m/%Y %
 valid_exData<- cbind(time, valid_exData)
 
 #plot1
-source('scripts/plot1.R')
+source('plot1.R')
 #plot 2
-source('scripts/plot2.R')
+source('plot2.R')
 #plot 3
-source('scripts/plot3.R')
+source('plot3.R')
 #plot 4
-source('scripts/plot4.R')
+source('plot4.R')
