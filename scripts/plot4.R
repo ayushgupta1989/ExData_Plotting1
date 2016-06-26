@@ -1,4 +1,4 @@
-png(filename='plots/plot4.png',width=480,height=480,units='px')
+png(filename='plot4.png',width=480,height=480,units='px')
 par(mfrow=c(2,2))
 plot(valid_exData$time, valid_exData$Global_active_power, type="l", col="green", xlab="", ylab="Global Active Power")
 plot(valid_exData$time, valid_exData$Voltage, type="l", col="orange", xlab="datetime", ylab="Voltage")
